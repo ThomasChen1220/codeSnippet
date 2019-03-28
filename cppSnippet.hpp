@@ -1,3 +1,17 @@
+/*
+This is a part of a program that read in assembly code
+and outputs the state of simulated registers and stack.
+The input example:
+	movi r1,5
+	movi r2,20
+	add r3,r1,r2
+	add r3,r3,r1
+	exit
+This particular part of code helps easily parse each
+line of statement, and is scalable. 
+The project's skeleton is provided by ITP 435 instructor,     
+Sanjay Madhav.
+*/
 template<typename T>
 std::tuple<T> ParseElem(const std::string& elem) {
 
